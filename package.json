@@ -1,0 +1,19 @@
+{
+  "name": "drag-one",
+  "version": "0.1.0",
+  "homepage": "https://tabla-info.firebaseapp.com/",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-dragula": "^1.1.17",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

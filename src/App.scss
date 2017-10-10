@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  display: none;
+  background-color: #D8D8D8;
+  padding: 10px;
+}
+
+.App-title {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.dragableWrapper {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dragable-sort {
+  margin: 1em auto;
+  padding: 5px 10px;
+  background: #FFF;
+  min-height: 40px;
+  position: relative;
+}
+
+#bank {
+  background: transparent;
+}
+
+.coin {
+  width: 47px;
+  margin: -20px 0;
+  // clip-path: inset(10px 0 10px 0);
+}
+
+.proposaltext {
+  position: relative;
+  p {
+    position: absolute;
+    left: 4.5em;
+    z-index: 999;
+    top: -8px;
+  }
+}
+
+.banktext {
+  position: relative;
+  p {
+    position: absolute;
+    left: 4.5em;
+    z-index: 999;
+    color: #666;
+  }
+
+}
