@@ -1,17 +1,23 @@
-.App {
-  text-align: center;
+@import 'styles/_variables';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Publik,sans-serif;
+  background-color: $svt-color_warm-gray_extra-light;
+  font-size: 16px;
+  color: $color-text;
 }
 
-
-.App-header {
-  display: none;
-  background-color: #D8D8D8;
-  padding: 10px;
+.App {
+  text-align: center;
 }
 
 .App-title {
   font-size: 1.5em;
   font-weight: 200;
+  padding: 1em 0 0 0;
+  margin: 0
 }
 
 .App-intro {
@@ -25,16 +31,12 @@
     margin: 0 auto;
 }
 
-.dragable-sort {
-  margin: 1em auto;
-  padding: 5px 10px;
-  background: #FFF;
-  min-height: 40px;
-  position: relative;
-}
+
 
 #bank {
   background: transparent;
+  height: 115px;
+  margin-top: 0;
 }
 
 .coin {
@@ -62,4 +64,42 @@
     color: #666;
   }
 
+}
+
+///
+
+.dragable-sort {
+  margin: 1em auto;
+  padding: 5px 10px;
+  background: #FFF;
+  min-height: 40px;
+  position: relative;
+}
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  /*
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  */
+  .coin {
+    transform: scale(1.2);
+  }
+}
+.gu-hide {
+  display: none !important;
+}
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }

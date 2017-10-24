@@ -1,14 +1,31 @@
+/* SVT Graphic Profile https://styleguide.svt.se/identity/color */
+/* Red */
+/* Orange */
+/* Yellow */
+/* Green */
+/* Turquoise */
+/* Blue */
+/* Purple */
+/* Gray */
+/* Warm Gray */
+/* Cool Gray */
+/* Black & White */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Publik,sans-serif;
+  background-color: #ebebe6;
+  font-size: 16px;
+  color: #000000; }
+
 .App {
   text-align: center; }
 
-.App-header {
-  display: none;
-  background-color: #D8D8D8;
-  padding: 10px; }
-
 .App-title {
   font-size: 1.5em;
-  font-weight: 200; }
+  font-weight: 200;
+  padding: 1em 0 0 0;
+  margin: 0; }
 
 .App-intro {
   font-size: large; }
@@ -19,15 +36,10 @@
   max-width: 600px;
   margin: 0 auto; }
 
-.dragable-sort {
-  margin: 1em auto;
-  padding: 5px 10px;
-  background: #FFF;
-  min-height: 40px;
-  position: relative; }
-
 #bank {
-  background: transparent; }
+  background: transparent;
+  height: 115px;
+  margin-top: 0; }
 
 .coin {
   width: 47px;
@@ -48,5 +60,38 @@
     left: 4.5em;
     z-index: 999;
     color: #666; }
+
+.dragable-sort {
+  margin: 1em auto;
+  padding: 5px 10px;
+  background: #FFF;
+  min-height: 40px;
+  position: relative; }
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  /*
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  */ }
+  .gu-mirror .coin {
+    transform: scale(1.2); }
+
+.gu-hide {
+  display: none !important; }
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important; }
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20); }
 
 /*# sourceMappingURL=App.css.map */
